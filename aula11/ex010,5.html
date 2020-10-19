@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionallity</title>
+    <style>
+        body{
+            background: rgba(0, 0, 0, 0.888);
+            font: normal 18pt Helvetica;
+            color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nacionallity</h1>
+    País de Origem : <input type="text" name="nac" id="nac">
+    <input type="button" value="verificar" onclick="confirmar()">
+    <div id = "entr">
+
+    </div>
+    <script>
+        function confirmar(){
+            var pais = window.document.querySelector("input#nac")
+            var loc = window.document.querySelector("div#entr")
+            var fin = String(pais.value)
+            loc.innerHTML = `<p>Seu país de origem é ${fin}.</p>`
+            if( fin != "BR"){
+                loc.innerHTML += `<p>Estrangeiro!</p>`
+            }else{
+                loc.innerHTML += `<p>Brasileiro!</p>`
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de Médias</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Médias Escolares </h1>
+    </header>
+    <section>
+        <div>
+            <p>
+             <p>Média Primeira Unidade:</p>
+             <input type="number" name="txtu1" id="txtu1" min="0">
+             <p>Média Segunda Unidade:</p>
+             <input type="number" name="txtu2" id="txtu2" min="0">
+             <p>Média Terceira Unidade:</p>
+             <input type="number" name="txtu3" id="txtu3" min="0">
+             <p>Média Quarta Unidade:</p>
+             <input type="number" name="txtu4" id="txtu4" min="0">
+            
+            </p>
+            <p>
+                <input type="button" value="CALCULAR!" onclick="calcular()">
+            </p>
+        </div>
+        <div id = "res">
+            Preecha os dados acima para obter sua média!
+        </div>
+        <div id="resp">
+            Aqui mostrarei sua média!
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Gustavo Amorim</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
